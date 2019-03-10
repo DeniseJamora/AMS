@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v2.1.12
+* @link https://coreui.io
+* Copyright (c) 2018 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>CoreUI Free Bootstrap Admin Template</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <!-- Icons-->
+    <link href="https://unpkg.com/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+
+    <!--PLUGINS AND OTHERS-->
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // Bootstrap ID
+      gtag('config', 'UA-118965717-5');
+    </script>
+
+  </head>
+  <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <header class="app-header navbar" id="header">
+      <script>
+        $("#header").load("header.html");
+      </script>
+    </header>
+    <div class="app-body">
+      <div class="sidebar" id="sidebar">
+        <script>
+          $("#sidebar").load("sidebar.html");
+        </script>
+        <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+      </div>
+      <main class="main">
+        <!-- Breadcrumb-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">Home</li>
+          <li class="breadcrumb-item">
+            <a href="#">New Accreditation</a>
+          </li>
+          <li class="breadcrumb-item active">Create Checklist</li>
+          <!-- Breadcrumb Menu-->
+        </ol>
+<!--START OF CONTENT-->
+        <div class="container-fluid">
+          <div class="animated fadeIn">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    <strong>Create New Accreditation Checklist</strong>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#faculty" role="tab" aria-controls="faculty">Faculty</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Curriculum</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#messages" role="tab" aria-controls="messages">Laboratory</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="faculty" role="tabpanel">
+                            <br><br>
+                            <div class="row" class="checklist"> 
+                              <div class="col-sm-7">
+                                <p>Random Criteria 1</p>
+                              </div>
+                              <div class="col-sm-3 text-center">
+                                <p>Yes/No</p>
+                              </div>
+                              <div class="col-sm-2 checklistitem">
+                              </div>
+                            </div>
+                            <div class="row" class="checklist"> 
+                              <div class="col-sm-7">
+                                <p style="margin-left: 10%;">Random Sub-Criteria 1</p>
+                              </div>
+                              <div class="col-sm-3 text-center">
+                                <p>Excellent - Unsatisfactory</p>
+                              </div>
+                              <div class="col-sm-2 checklistitem">
+                              </div>
+                            </div>
+                            <div class="row" class="checklist"> 
+                              <div class="col-sm-7">
+                                <p>Random Criteria 2</p>
+                              </div>
+                              <div class="col-sm-3 text-center">
+                                <p>1 - 5</p>
+                              </div>
+                              <div class="col-sm-2 checklistitem">
+                              </div>
+                            </div>
+                            <!-- INPUT WILL BE INSERTED HERE-->
+                            <br><br>
+                            <div class="row">
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <label for="name">Criteria</label>
+                                  <input class="form-control" id="subject" type="text" placeholder="Enter Criteria">
+                                </div>
+                              </div>
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <label for="name">Type</label>
+                                  <select class="form-control" id="type">
+                                    <option value="Criteria">Criteria</option>
+                                    <option value="Sub-Criteria">Sub-Criteria</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <label for="name">Value</label>
+                                  <select class="form-control" id="value">
+                                    <option value="Yes/No">Yes/No</option>
+                                    <option value="1 - 5">1 - 5</option>
+                                    <option value="Excellent - Unsatisfactory">Excellent - Unsatisfactory</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <br>
+                                  <button class="btn btn-secondary" type="button" onclick="newElement()" style="margin-top: 8px;"> Add Criteria</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="profile" role="tabpanel">
+                            2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.col-->
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <button class="btn btn-primary" type="button"> <a href="createcommittee.html" style="text-decoration: none; color:white;">Next</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--END OF CONTENT-->
+      </main>
+      <aside class="aside-menu" id="sidemenu">
+        <script>
+          $("#sidemenu").load("sidemenu.html");
+        </script>
+      </aside>
+    </div>
+    <footer class="app-footer">
+      <div>
+        <a href="https://coreui.io">CoreUI</a>
+        <span>&copy; 2018 creativeLabs.</span>
+      </div>
+      <div class="ml-auto">
+        <span>Powered by</span>
+        <a href="https://coreui.io">CoreUI</a>
+      </div>
+    </footer>
+    <!-- CoreUI and necessary plugins-->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/util.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+    <script>
+      $(document).ready( function () {
+        $('#myTable').DataTable();
+      } );
+    </script>
+
+    <script>
+      // Create a "close" button and append it to each list item
+      var myNodelist = document.getElementsByClassName("checklistitem");
+      var i;
+      for (i = 0; i < myNodelist.length; i++) {
+        var div = document.createElement("DIV");
+        var txt = '<button class="btn btn-sm btn-secondary" type="button" style="margin-right: 10px">Edit</button><button class="btn btn-sm btn-danger" id="close" onclick="remove()" type="button"style="inline">Remove</button>';
+        div.className = "button";
+        div.insertAdjacentHTML('beforeend', txt);
+        myNodelist[i].appendChild(div);
+      }
+
+      // Click on a close button to hide the current list item
+      var close = document.getElementsById("close");
+      var i;
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function remove() {
+          var div = document.getElementsByClassName("checklist");
+          div.style.display = "none";
+        }
+      }
+
+      // Create a new list item when clicking on the "Add" button
+      function newElement() {
+        var subjectValue = document.getElementById("subject").value;
+        var typeValue = document.getElementById("type").value;
+        var valueValue = document.getElementById("value").value;
+        var y = '<div class="row" class="checklist"><div class="col-sm-7"><p>'+subjectValue+'</p></div> <div class="col-sm-3 text-center"><p>'+valueValue+'</p></div><div class="col-sm-2 checklistitem"></div></div>';
+        var z = '<div class="row" class="checklist"><div class="col-sm-7"><p style="margin-left: 10%;">'+subjectValue+'</p></div> <div class="col-sm-3 text-center"><p>'+valueValue+'</p></div><div class="col-sm-2 checklistitem"></div></div>';
+        var t = document.createTextNode(subjectValue);
+        var t = document.createTextNode(valueValue);
+        if (inputValue === '') {
+          alert("You must write something!");
+        } 
+        else if (typeValue == 'Criteria'){
+          document.getElementById("myUL").insertAdjacentHTML('beforeend', y);
+        }
+        document.getElementById("subject").value = "";
+
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
