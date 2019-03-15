@@ -64,9 +64,16 @@
         <!-- Breadcrumb-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">Home</li>
-          <li class="breadcrumb-item">New Accreditation</li>
-          <li class="breadcrumb-item">Create Committee</li>
-          <li class="breadcrumb-item active">Assign User</li>
+          <li class="breadcrumb-item">
+            <a href="#">Dashboard</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">PAASCU for BSINSYS 2019</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">Criteria Checklist</a>
+          </li>
+          <li class="breadcrumb-item active">Add Evidence</li>
           <!-- Breadcrumb Menu-->
         </ol>
 <!--START OF CONTENT-->
@@ -76,56 +83,55 @@
               <div class="col-sm-12">
                 <div class="card">
                   <div class="card-header">
-                    <strong>Team Assignment</strong>
+                    <strong>Add Evidence</strong>
                   </div>
-                  <!--FORM STARTS HERE-->
                   <div class="card-body">
                     <div class="row">
-                      <div class="form-group col-sm-6">
-                        <label for="period">Name</label>
-                        <input class="form-control" id="disabled-input" type="text" name="disabled-input" placeholder="Juan Dela Cruz" disabled="">
+                      <div class="col-sm-6">
+                        <p>Faculty / A.1 Random Module Name / Random Criteria Name 1</p>
                       </div>
-                      <div class="form-group col-sm-6">
-                        <label for="period">Department</label>
-                        <input class="form-control" id="disabled-input" type="text" name="disabled-input" placeholder="IT Department" disabled="">
+                    </div>  
+                    <br>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label for="name">Exhibit Number</label>
+                          <input class="form-control" id="name" type="text" placeholder="Ex. Exhibit 11.1">
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label for="name">File Name</label>
+                          <input class="form-control" id="name" type="text" placeholder="Enter File Name">
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label for="name">Description</label>
+                          <textarea class="form-control" id="textarea-input" name="textarea-input" rows="1" placeholder="Enter Description Here.."></textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label for="name">Evidence / Exhibit Source</label>
+                          <input class="form-control" id="name" type="text" placeholder="Enter Source">
+                        </div>
                       </div>
                     </div>
+                    <div id="addNewElement">
+                    </div>
+                    <br><br>
                     <div class="row">
-                      <div class="form-group col-sm-3">
-                        <label for="period">Accreditation Period</label>
-                        <select class="form-control" id="period">
-                          <option>PAASCU 2019 for IS</option>
-                          <option>PACUCOA 2019 for IT</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-sm-3">
-                        <label for="area">Area</label>
-                        <select class="form-control" id="area">
-                          <option>Curriculum</option>
-                          <option>Faculty</option>
-                          <option>Laboratory</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-sm-3">
-                        <label for="team">Team</label>
-                        <select class="form-control" id="team">
-                          <option>Analysis</option>
-                          <option>Evaluation</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-sm-3">
-                        <label for="position">Position</label>
-                        <select class="form-control" id="position">
-                          <option>Committee Head</option>
-                          <option>Team Member</option>
-                        </select>
+                      <div class="col-sm-4">
+                        <div class="form-group">
+                          <button class="btn btn-primary" type="button" onclick="newElement()">Add More Evidence</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="card-footer">
-                    <button class="btn btn-primary" type="button"> <a href="createcommittee.html" style="text-decoration: none; color:white;">Send Request</a></button>
+                    <button class="btn btn-primary" type="button"><a href="criteriachecklist.html" style="text-decoration: none; color:white;">Save</a></button>
                   </div>
-                  <!--FORM ENDS HERE-->
                 </div>
               </div>
             </div>
@@ -162,6 +168,39 @@
       $(document).ready( function () {
         $('#myTable').DataTable();
       } );
+    </script>
+
+    <script>
+      // Create a new list item when clicking on the "Add" button
+      function newElement() {
+        var x = '<div class="row">'+
+                  '<div class="col-sm-3">'+
+                    '<div class="form-group">'+
+                      '<label for="name">Exhibit Number</label>'+
+                        '<input class="form-control" id="name" type="text" placeholder="Ex. Exhibit 11.1">'+
+                    '</div>'+
+                  '</div>'+
+                  '<div class="col-sm-3">'+
+                    '<div class="form-group">'+
+                      '<label for="name">File Name</label>'+
+                        '<input class="form-control" id="name" type="text" placeholder="Enter File Name">'+
+                    '</div>'+
+                  '</div>'+
+                  '<div class="col-sm-3">'+
+                    '<div class="form-group">'+
+                      '<label for="name">Description</label>'+
+                      '<textarea class="form-control" id="textarea-input" name="textarea-input" rows="1" placeholder="Enter Description Here.."></textarea>'+
+                    '</div>'+
+                  '</div>'+
+                  '<div class="col-sm-3">'+
+                    '<div class="form-group">'+
+                      '<label for="name">Evidence / Exhibit Source</label>'+
+                      '<input class="form-control" id="name" type="text" placeholder="Enter Source">'+
+                    '</div>'+
+                  '</div>'+
+                '</div>';
+        document.getElementById("addNewElement").insertAdjacentHTML('beforeend', x);
+      }
     </script>
 
   </body>
