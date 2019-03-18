@@ -46,6 +46,28 @@
       gtag('config', 'UA-118965717-5');
     </script>
 
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+    </style>
+
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     <header class="app-header navbar" id="header">
@@ -64,10 +86,7 @@
         <!-- Breadcrumb-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">Home</li>
-          <li class="breadcrumb-item">
-            <a href="#">Admin</a>
-          </li>
-          <li class="breadcrumb-item active">Dashboard</li>
+          <li class="breadcrumb-item active">Document Repository</li>
           <!-- Breadcrumb Menu-->
         </ol>
 <!--START OF CONTENT-->
@@ -76,9 +95,7 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="card">
-                  <div class="card-header">
-                    <i class="fa fa-align-justify"></i> Document Repository
-                  </div>
+                  <div class="card-header">Document Repository</div>
                   <div class="card-body">
                     <div class="row">
                       <div class="col-md-6">
@@ -102,7 +119,7 @@
                               <th>Version</th>
                               <th>Uploaded by</th>
                               <th>Edited by</th>
-                              <th>Actions</th>
+                              <th></th>
                             </tr>
                           </thead>
                           <tbody>

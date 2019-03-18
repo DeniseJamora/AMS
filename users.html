@@ -16,7 +16,7 @@
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-    <title>CoreUI Free Bootstrap Admin Template</title>
+    <title>Users</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
     <!-- Icons-->
     <link href="https://unpkg.com/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
@@ -87,66 +87,52 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item">Home</li>
           <li class="breadcrumb-item">
-            <a href="#"> Profile</a>
+            <a href="#">Dashboard</a>
           </li>
-          <li class="breadcrumb-item active">Edit Profile</li>
+          <li class="breadcrumb-item active">Users</li>
+          <li class="breadcrumb-item active">Faculty</li>
           <!-- Breadcrumb Menu-->
         </ol>
 <!--START OF CONTENT-->
         <div class="container-fluid">
           <div class="animated fadeIn">
             <div class="row">
-              <div class="col-sm-12">
+              <div class="col-lg-12">
                 <div class="card">
                   <div class="card-header">
-                    <strong>Edit Profile</strong>
+                    Faculty
                   </div>
-                  <!--FORM STARTS HERE-->
                   <div class="card-body">
                     <div class="row">
-                      <div class="form-group col-sm-4">
-                        <label for="period">Given Name</label>
-                        <input class="form-control" type="text" placeholder="Ivanna Denise">
-                      </div>
-                      <div class="form-group col-sm-4">
-                        <label for="period">Middle Initial</label>
-                        <input class="form-control" type="text" placeholder="T">
-                      </div>
-                      <div class="form-group col-sm-4">
-                        <label for="period">Surname</label>
-                        <input class="form-control" type="text" placeholder="Jamora">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="form-group col-sm-6">
-                        <label for="period">College</label>
-                        <input class="form-control" type="text" placeholder="College of Computer Studies">
-                      </div>
-                      <div class="form-group col-sm-6">
-                        <label for="period">Department</label>
-                        <input class="form-control" type="text" placeholder="IT">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="form-group col-sm-6">
-                        <label for="period">Preferred Areas</label>
-                        <input class="form-control" type="text" placeholder="Curriculum, Laboratory">
-                      </div>
-                      <div class="form-group col-sm-6">
-                        <label for="period">Experience</label>
-                        <select class="form-control">
-                          <option value="1">Knowledgeable</option>
-                          <option value="1">Novice</option>
-                          <option value="2" selected="">Advanced</option>
-                          <option value="2">Expert</option>
-                        </select>
+                      <div class="col-md-12">
+                        <table id="myTable" class="table table-responsive-sm table-striped table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Name</th>
+                              <th>College</th>
+                              <th>Department</th>
+                              <th>Preferred Areas</th>
+                              <th>Experience</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Juan Dela Cruz</td>
+                              <td>College of COmputer Studies</td>
+                              <td>IT</td>
+                              <td>Faculty, Curriculum</td>
+                              <td>Advanced</td>
+                              <td>
+                                <button class="btn btn-primary" type="submit"> View Profile</button>
+                                <button class="btn btn-danger" type="reset"> Deactivate</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
-                  <div class="card-footer">
-                    <button class="btn btn-primary" type="button"> <a href="viewprofile.html" style="text-decoration: none; color:white;">Save</a></button>
-                  </div>
-                  <!--FORM ENDS HERE-->
                 </div>
               </div>
             </div>

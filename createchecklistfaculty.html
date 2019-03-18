@@ -86,7 +86,7 @@
         <!-- Breadcrumb-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">Home</li>
-          <li class="breadcrumb-item active">Criteria Checklist (Faculty)</li>
+          <li class="breadcrumb-item active">Create Checklist (Faculty)</li>
           <!-- Breadcrumb Menu-->
         </ol>
 <!--START OF CONTENT-->
@@ -96,7 +96,7 @@
               <div class="col-sm-12">
                 <div class="card">
                   <div class="card-header">
-                    <strong>Criteria Checklist (Faculty)</strong>
+                    <strong>Create Checklist (Faculty)</strong>
                   </div>
                   <div class="card-body">
                     <div class="row">
@@ -104,91 +104,76 @@
                             <p>A.1 Random Checklist Module Name</p>
                             <br>
                             <div class="row" class="checklist"> 
-                              <div class="col-sm-3">
-                                <p>Random Criteria Name 1</p>
+                              <div class="col-sm-7">
+                                <p>Random Criteria 1</p>
                               </div>
-                              <div class="col-sm-2">
-                                <select class="form-control">
-                                  <option value="1">Please Select</option>
-                                  <option value="1">Yes</option>
-                                  <option value="2">No</option>
-                                </select>
+                              <div class="col-sm-3 text-center">
+                                <p>Yes/No</p>
                               </div>
-                              <div class="col-sm-3">
-                                <textarea class="form-control" id="textarea-input" name="textarea-input" rows="3" placeholder="Enter Remarks Here.."></textarea>
-                              </div>
-                              <div class="col-sm-2">
-                                <select class="form-control" id="multiple-select" name="multiple-select" size="3" multiple="">
-                                  <option value="1">Evidence #1</option>
-                                  <option value="2">Evidence #2</option>
-                                  <option value="3">Evidence #3</option>
-                                  <option value="4">Evidence #4</option>
-                                </select>
-                              </div>
-                              <div class="col-sm-2">
-                                <button class="btn btn-sm btn-secondary" type="button" style="margin-right: 10px">Request Evidence</button>
+                              <div class="col-sm-2 checklistitem">
                               </div>
                             </div>
-                            <br>
                             <div class="row" class="checklist"> 
-                              <div class="col-sm-3">
-                                <p>Random Criteria Name 1</p>
+                              <div class="col-sm-7">
+                                <p style="margin-left: 10%;">Random Sub-Criteria 1</p>
                               </div>
-                              <div class="col-sm-2">
-                                <select class="form-control">
-                                  <option value="1">Please Select</option>
-                                  <option value="1">Yes</option>
-                                  <option value="2">No</option>
-                                </select>
+                              <div class="col-sm-3 text-center">
+                                <p>Excellent - Unsatisfactory</p>
                               </div>
-                              <div class="col-sm-3">
-                                <textarea class="form-control" id="textarea-input" name="textarea-input" rows="3" placeholder="Enter Remarks Here.."></textarea>
-                              </div>
-                              <div class="col-sm-2">
-                                <select class="form-control" id="multiple-select" name="multiple-select" size="3" multiple="">
-                                  <option value="1">Evidence #1</option>
-                                  <option value="2">Evidence #2</option>
-                                  <option value="3">Evidence #3</option>
-                                  <option value="4">Evidence #4</option>
-                                </select>
-                              </div>
-                              <div class="col-sm-2">
-                                <button class="btn btn-sm btn-secondary" type="button" style="margin-right: 10px">Request Evidence</button>
+                              <div class="col-sm-2 checklistitem">
                               </div>
                             </div>
-                            <br>
                             <div class="row" class="checklist"> 
-                              <div class="col-sm-3">
-                                <p style="margin-left: 10%;">Random Sub Criteria Name 1</p>
+                              <div class="col-sm-7">
+                                <p>Random Criteria 2</p>
                               </div>
-                              <div class="col-sm-2">
-                                <select class="form-control">
-                                  <option value="1">Please Select</option>
-                                  <option value="1">Yes</option>
-                                  <option value="2">No</option>
-                                </select>
+                              <div class="col-sm-3 text-center">
+                                <p>1 - 5</p>
                               </div>
-                              <div class="col-sm-3">
-                                <textarea class="form-control" id="textarea-input" name="textarea-input" rows="3" placeholder="Enter Remarks Here.."></textarea>
-                              </div>
-                              <div class="col-sm-2">
-                                <select class="form-control" id="multiple-select" name="multiple-select" size="3" multiple="">
-                                  <option value="1">Evidence #1</option>
-                                  <option value="2">Evidence #2</option>
-                                  <option value="3">Evidence #3</option>
-                                  <option value="4">Evidence #4</option>
-                                </select>
-                              </div>
-                              <div class="col-sm-2">
-                                <button class="btn btn-sm btn-secondary" type="button" style="margin-right: 10px">Request Evidence</button>
+                              <div class="col-sm-2 checklistitem">
                               </div>
                             </div>
+                            <!-- INPUT WILL BE INSERTED HERE-->
+                            <br><br>
+                            <div class="row">
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <label for="name">Criteria</label>
+                                  <input class="form-control" id="subject" type="text" placeholder="Enter Criteria">
+                                </div>
+                              </div>
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <label for="name">Type</label>
+                                  <select class="form-control" id="type">
+                                    <option value="Criteria">Criteria</option>
+                                    <option value="Sub-Criteria">Sub-Criteria</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <label for="name">Value</label>
+                                  <select class="form-control" id="value">
+                                    <option value="Yes/No">Yes/No</option>
+                                    <option value="1 - 5">1 - 5</option>
+                                    <option value="Excellent - Unsatisfactory">Excellent - Unsatisfactory</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <br>
+                                  <button class="btn btn-secondary" type="button" onclick="newElement()" style="margin-top: 8px;"> Add Criteria</button>
+                                </div>
+                              </div>
+                        </div>
                       </div>
                       <!-- /.col-->
                     </div>
                   </div>
                   <div class="card-footer">
-                    <button class="btn btn-primary" type="button"> <a href="criteriachecklist.html" style="text-decoration: none; color:white;">Save</a></button>
+                    <button class="btn btn-primary" type="button"> <a href="createchecklistcurriculum.html" style="text-decoration: none; color:white;">Next</a></button>
                   </div>
                 </div>
               </div>
@@ -234,7 +219,7 @@
       var i;
       for (i = 0; i < myNodelist.length; i++) {
         var div = document.createElement("DIV");
-        var txt = '<button class="btn btn-sm btn-secondary" type="button" style="margin-right: 10px">Edit</button>';
+        var txt = '<button class="btn btn-sm btn-secondary" type="button" style="margin-right: 10px">Edit</button><button class="btn btn-sm btn-danger" id="close" onclick="remove()" type="button"style="inline">Remove</button>';
         div.insertAdjacentHTML('beforeend', txt);
         myNodelist[i].appendChild(div);
       }
@@ -261,6 +246,9 @@
         if (inputValue === '') {
           alert("You must write something!");
         } 
+        else if (typeValue == 'Criteria'){
+          document.getElementById("myUL").insertAdjacentHTML('beforeend', y);
+        }
         else if (typeValue == 'Criteria'){
           document.getElementById("myUL").insertAdjacentHTML('beforeend', y);
         }

@@ -86,10 +86,7 @@
         <!-- Breadcrumb-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">Home</li>
-          <li class="breadcrumb-item">
-            <a href="#"> Profile</a>
-          </li>
-          <li class="breadcrumb-item active">Edit Profile</li>
+          <li class="breadcrumb-item active">Create QA</li>
           <!-- Breadcrumb Menu-->
         </ol>
 <!--START OF CONTENT-->
@@ -99,52 +96,58 @@
               <div class="col-sm-12">
                 <div class="card">
                   <div class="card-header">
-                    <strong>Edit Profile</strong>
+                    <strong>Create QA</strong>
                   </div>
                   <!--FORM STARTS HERE-->
                   <div class="card-body">
                     <div class="row">
                       <div class="form-group col-sm-4">
                         <label for="period">Given Name</label>
-                        <input class="form-control" type="text" placeholder="Ivanna Denise">
+                        <input class="form-control" id="disabled-input" type="text" placeholder="Given Name">
                       </div>
                       <div class="form-group col-sm-4">
-                        <label for="period">Middle Initial</label>
-                        <input class="form-control" type="text" placeholder="T">
+                        <label for="period">Middle Inital</label>
+                        <input class="form-control" id="disabled-input" type="text" placeholder="Middle Initial">
                       </div>
                       <div class="form-group col-sm-4">
-                        <label for="period">Surname</label>
-                        <input class="form-control" type="text" placeholder="Jamora">
+                        <label for="period">Last Name</label>
+                        <input class="form-control" id="disabled-input" type="text" placeholder="Last Name">
                       </div>
                     </div>
                     <div class="row">
-                      <div class="form-group col-sm-6">
-                        <label for="period">College</label>
-                        <input class="form-control" type="text" placeholder="College of Computer Studies">
+                      <div class="form-group col-sm-3">
+                        <label for="period">Accreditation Period</label>
+                        <select class="form-control" id="period">
+                          <option>PAASCU 2019 for IS</option>
+                          <option>PACUCOA 2019 for IT</option>
+                        </select>
                       </div>
-                      <div class="form-group col-sm-6">
-                        <label for="period">Department</label>
-                        <input class="form-control" type="text" placeholder="IT">
+                      <div class="form-group col-sm-3">
+                        <label for="area">Area</label>
+                        <select class="form-control" id="area">
+                          <option>Curriculum</option>
+                          <option>Faculty</option>
+                          <option>Laboratory</option>
+                        </select>
                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="form-group col-sm-6">
-                        <label for="period">Preferred Areas</label>
-                        <input class="form-control" type="text" placeholder="Curriculum, Laboratory">
+                      <div class="form-group col-sm-3">
+                        <label for="team">Team</label>
+                        <select class="form-control" id="team">
+                          <option>Analysis</option>
+                          <option>Evaluation</option>
+                        </select>
                       </div>
-                      <div class="form-group col-sm-6">
-                        <label for="period">Experience</label>
-                        <select class="form-control">
-                          <option value="1">Knowledgeable</option>
-                          <option value="1">Novice</option>
-                          <option value="2" selected="">Advanced</option>
-                          <option value="2">Expert</option>
+                      <div class="form-group col-sm-3">
+                        <label for="position">Position</label>
+                        <select class="form-control" id="position">
+                          <option>Committee Head</option>
+                          <option>Team Member</option>
                         </select>
                       </div>
                     </div>
                   </div>
                   <div class="card-footer">
-                    <button class="btn btn-primary" type="button"> <a href="viewprofile.html" style="text-decoration: none; color:white;">Save</a></button>
+                    <button class="btn btn-primary" type="button">Create QA</button>
                   </div>
                   <!--FORM ENDS HERE-->
                 </div>

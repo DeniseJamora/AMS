@@ -46,6 +46,28 @@
       gtag('config', 'UA-118965717-5');
     </script>
 
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+    </style>
+
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     <header class="app-header navbar" id="header">
@@ -64,7 +86,7 @@
         <!-- Breadcrumb-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">Home</li>
-          <li class="breadcrumb-item active"> View Committees</li>
+          <li class="breadcrumb-item active"> Committee List</li>
           <!-- Breadcrumb Menu-->
         </ol>
 <!--START OF CONTENT-->
@@ -83,6 +105,7 @@
                           <th>Area</th>
                           <th>Team</th>
                           <th>Position</th>
+                          <th>Status</th>
                           <th></th>
                         </tr>
                       </thead>
@@ -93,8 +116,9 @@
                           <td>Faculty</td>
                           <td>Analysis</td>
                           <td>Committee Head</td>
+                          <td>Accepted</td>
                           <td>
-                            <button class="btn btn-primary" type="submit">Edit</button>
+                            <button class="btn btn-primary" type="submit"><a href="assignuser.html" style="text-decoration: none; color: white">Edit</a></button>
                           </td>
                         </tr>
                         <tr>
@@ -103,8 +127,9 @@
                           <td>Curriculum</td>
                           <td>Evaluation</td>
                           <td>Team Member</td>
+                          <td>Accepted</td>
                           <td>
-                            <button class="btn btn-primary" type="submit">Edit</button>
+                            <button class="btn btn-primary" type="submit"><a href="assignuser.html" style="text-decoration: none; color: white">Edit</a></button>
                           </td>
                         </tr>
                         <tr>
@@ -113,8 +138,9 @@
                           <td>Laboratory</td>
                           <td>Analysis</td>
                           <td>Team Member</td>
+                          <td>Accepted</td>
                           <td>
-                            <button class="btn btn-primary" type="submit">Edit</button>
+                            <button class="btn btn-primary" type="submit"><a href="assignuser.html" style="text-decoration: none; color: white">Edit</a></button>
                           </td>
                         </tr>
                         <tr>
@@ -123,8 +149,9 @@
                           <td>Faculty</td>
                           <td>Analysis</td>
                           <td>Committee Head</td>
+                          <td>Accepted</td>
                           <td>
-                            <button class="btn btn-primary" type="submit">Edit</button>
+                            <button class="btn btn-primary" type="submit"><a href="assignuser.html" style="text-decoration: none; color: white">Edit</a></button>
                           </td>
                         </tr>
                       </tbody>
